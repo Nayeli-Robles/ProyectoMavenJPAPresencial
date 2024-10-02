@@ -14,7 +14,7 @@ public class TestProducto {
 		TblProducto p=new TblProducto();
 		TblProductoImp dao= new TblProductoImp();
 		
-		p.setNomprod("Arroz INTegrall");
+	/*	p.setNomprod("Arroz INTegrall");
 		p.setPrecio(3.5);
 		p.setCantidad(4);
 		p.setTotal(p.getPrecio()*p.getCantidad());
@@ -23,22 +23,23 @@ public class TestProducto {
 		Date fecha=new Date();
 		Date fechasql=new Date(fecha.getTime());
 		dao.RegistrarProducto(p);
-		System.out.println("Se registro correctamente");
+		System.out.println("Se registro correctamente");*/
 		
-	/*	//**********ACTUALIZAR*************************
+		//**********ACTUALIZAR*************************
 		p.setIdproducto(1);
-		p.setNomprod("");
+		p.setNomprod("Azucar blanca");
 		p.setPrecio(1);
 		p.setCantidad(2);
 		p.setTotal(2);
 		p.setCodbarras("");
 		p.setNrolote("");
-		p.setFechaven(null);
+		Date fecha=new Date();
+		Date fechasql=new Date(fecha.getTime());
 		dao.ActualizarProducto(p);
 		System.out.println("Se actualizo correctamente");
 		
 		
-		//**********ACTUALIZAR*************************
+	/*	//**********ACTUALIZAR*************************
 				p.setIdproducto(1);
 				p.setNomprod("");
 				p.setPrecio(1);
